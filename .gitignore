@@ -1,4 +1,5 @@
 settings.py
 media/
-.pyc
+*.pyc
 .idea/
+.DS_Store
