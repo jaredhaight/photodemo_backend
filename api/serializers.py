@@ -6,6 +6,7 @@ from galleries.models import Gallery
 
 class CropSerializer(serializers.HyperlinkedModelSerializer):
     crop_url = serializers.Field(source='image.url')
+    desc = serializers.Field()
     class Meta:
         model = Crop
         fields = ('desc','crop_url')
